@@ -102,29 +102,102 @@
             <div class="tabs">
                 <a href="#intro" class="tab-link active" onclick="openTab(event, 'intro')">Introducción</a>
                 <span class="tab-separator">|</span>
-                <a href="#map" class="tab-link" onclick="openTab(event, 'map')">Mapa</a>
+                <a href="#map" class="tab-link" onclick="openTab(event, 'map')">Itinerario</a>
                 <span class="tab-separator">|</span>
                 <a href="#places" class="tab-link" onclick="openTab(event, 'places')">Sitios de Interés</a>
                 <span class="tab-separator">|</span>
                 <a href="#food" class="tab-link" onclick="openTab(event, 'food')">Restaurantes y Snacks</a>
                 <span class="tab-separator">|</span>
-                <a href="#tips" class="tab-link" onclick="openTab(event, 'tips')">Curiosidades</a>
+                <a href="#tips" class="tab-link" onclick="openTab(event, 'tips')">Trucos y Consejos</a>
             </div>
 
         </header>
 
         <section id="intro">
-            <h2>Bienvenidos a París</h2>
-            <p>Descubre el mejor itinerario para tu familia, optimizado para disfrutar de la Ciudad de la Luz.</p>
+            <h1>Detalles del Viaje a París</h1>
+            <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                <tr>
+                    <td
+                        style="border: 1px solid #ddd; padding: 8px;background-color: #0D246A; color: white; font-weight: bold;">
+                        <strong>Vuelo de Ida</strong>
+                    </td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">27 de diciembre de 2024 MAD (16:30) → ORY (18:25).
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="border: 1px solid #ddd; padding: 8px;background-color: #0D246A; color: white; font-weight: bold;">
+                        <strong>Vuelo de Vuelta</strong>
+                    </td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">31 de diciembre de 2024 ORY (19:25) → MAD (21:25).
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="border: 1px solid #ddd; padding: 8px;background-color: #0D246A; color: white; font-weight: bold;">
+                        <strong>Viajeros</strong>
+                    </td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">2 adultos y 2 adolescentes de 12 y 15 años.
+                    </td>
+                </tr>
+                <tr>
+                    <td
+                        style="border: 1px solid #ddd; padding: 8px;background-color: #0D246A; color: white; font-weight: bold;">
+                        <strong>Alojamiento</strong>
+                    </td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">
+                        <a href="https://www.hotellouvremarsollier.com/" target="_blank">Hotel Louvre Marsollier</a> |
+                        <a href="https://maps.app.goo.gl/qMV8XLwFGTKAFu3n8" target="_blank">Ubicación en Google Maps</a>
+                    </td>
+                </tr>
+            </table>
+            <h1>Planificación del Viaje</h1>
+            <p style="text-align: justify;">
+                El objetivo principal de este viaje es disfrutar de París en familia, explorando su historia,
+                belleza y cultura. Queremos visitar los principales sitios históricos y disfrutar de momentos
+                especiales juntos, especialmente el paseo nocturno por el Sena y la visita al Louvre.
+            </p>
+            <p style="text-align: justify;">
+                No vamos a Disneyland porque ya hemos estado dos veces y preferimos centrarnos en otras experiencias
+                esta vez. Solo visitaremos el Louvre, ya que no somos grandes aficionados a los museos, pero haremos
+                lo posible por disfrutar al máximo de los lugares históricos, plazas, parques y demás atractivos de
+                la ciudad.
+            </p>
+            <p style="text-align: justify;">
+                Los detalles día por día estarán en sus respectivas secciones para facilitar la organización y el
+                seguimiento.
+            </p>
+            <h1>Logística</h1>
+            <ul style="text-align: justify;">
+                <li>Nos alojaremos en el <strong>Hotel Louvre Marsollier</strong>, bien ubicado cerca de varios puntos
+                    clave.</li>
+                <li>En París usaremos exclusivamente <strong>transporte público</strong>: metro, autobús y tranvía. Nada
+                    de alquilar coches, ya que el transporte público es eficiente y cómodo.</li>
+                <li>Para los traslados entre el aeropuerto y el hotel (ida y vuelta), utilizaremos la opción más barata
+                    entre <strong>Uber</strong>, <strong>Bolt</strong> o <strong>taxi</strong>, ya que
+                    <strong>Cabify</strong> no opera en París.
+                </li>
+                <li><a href="https://www.ratp.fr/en/plans" target="_blank">Planos de transporte público</a></li>
+            </ul>
+        </section>
+
+        <section id="checklist">
+            <h2>Checklist de Viaje</h2>
+            <ul>
+                <li>DNI/pasaportes y tarjetas de embarque.</li>
+                <li>Reserva del hotel (impresa o en el móvil).</li>
+                <li>Ropa de invierno: abrigo, bufandas, guantes, paraguas.</li>
+                <li>Dinero en efectivo y tarjetas bancarias.</li>
+                <li>Adaptadores y cargadores para los dispositivos.</li>
+                <li>Medicamentos o artículos de higiene personal.</li>
+            </ul>
         </section>
 
         <section id="map">
-            <h2>Mapa de París</h2>
+            <h2>Itinerario</h2>
             <p>Explora la ubicación de los sitios en París que hemos preparado para ti:</p>
-            <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1Kw-JSGrL6CZuABGzoN5myVLZ06qOOIU&ehbc=2E312F"
-                width="640" height="480"></iframe> -->
-            <iframe src="https://www.google.com/maps/d/embed?mid=1Kw-JSGrL6CZuABGzoN5myVLZ06qOOIU&ehbc=2E312F" width="100%" height="480" style="border:0;" allowfullscreen=""
-                loading="lazy">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Kw-JSGrL6CZuABGzoN5myVLZ06qOOIU&ehbc=2E312F"
+                width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </section>
 
@@ -151,13 +224,44 @@
         </section>
 
         <section id="tips">
-            <h2>Día 4: Barrio Latino y Montparnasse</h2>
-            <ul>
-                <li>Desayuno en Les Petits Mitrons.</li>
-                <li>Visita a Notre-Dame y Sainte Chapelle.</li>
-                <li>Almuerzo en Le Marmiton de Lutèce.</li>
-                <li>Visita a los Jardines de Luxemburgo y Tour Montparnasse.</li>
-                <li>Cena en Pain Vin Fromages.</li>
+            <h1>Trucos y Consejos</h1>
+            <ul style="text-align: justify;">
+                <li><strong>Transporte desde el aeropuerto:</strong> Para llegar al centro o al hotel desde los
+                    aeropuertos (Beauvais, Orly o Charles de Gaulle), utiliza tren, metro, autobús, taxi o reserva un
+                    transfer directo al hotel.</li>
+                <li>
+                    <strong>Transporte y Tarjetas:</strong> La forma más cómoda de moverse por París es el
+                    <strong>metro</strong>, que cubre casi toda la ciudad. Para el barrio de Montmartre, puedes usar el
+                    <strong>funicular</strong> o caminar.
+                    <ul>
+                        <li>
+                            <strong>Billetes de Transporte:</strong> Compra el
+                            <a href="https://www.ratp.fr/en/titres-et-tarifs/t-ticket" target="_blank">Ticket t+</a>,
+                            válido para el metro, RER (zona 1), autobuses, tranvías y el funicular de Montmartre.
+                            Permite
+                            conexiones ilimitadas dentro de la red durante 1 hora y 30 minutos. No incluye conexiones
+                            entre
+                            metro/RER y autobuses/tranvías.
+                            <a href="https://www.ratp.fr/en/titres-et-tarifs/t-ticket" target="_blank">Más
+                                información</a>.
+                        </li>
+                        <li>
+                            <strong>Tarjeta Paris Pass:</strong> Si planeas visitar muchas atracciones, considera la
+                            tarjeta
+                            <a href="https://parispass.com/es" target="_blank">Paris Pass</a>, que incluye la entrada a
+                            más de
+                            60 atracciones y puede ser una opción económica para turistas.
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Agua en restaurantes:</strong> Pide "une carafe d’eau" (jarra de agua del grifo) para evitar
+                    pagar entre 5 y 6 € por una botella de agua.</li>
+                <li><strong>Reservas anticipadas:</strong> Reserva entradas con antelación para evitar colas en lugares
+                    populares como la Torre Eiffel o el Museo del Louvre.</li>
+                <li><strong>Free tours:</strong> Únete a free tours en español para conocer la historia y curiosidades
+                    de París. Es una forma económica y enriquecedora de explorar la ciudad.</li>
+                <li><strong>Tarjetas sin comisiones:</strong> Usa tarjetas bancarias como Revolut o N26 para evitar
+                    comisiones en compras o retiradas de efectivo.</li>
             </ul>
         </section>
         <footer>
