@@ -277,3 +277,23 @@ html {
         padding: 5px 10px;
     }
 }
+
+
+/* Maintain horizontal tabs on mobile */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: thin; /* For modern browsers */
+    }
+    .tab-link {
+        flex: none;
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+    .tab-separator {
+        display: none; /* Remove separators to save space */
+    }
+}
