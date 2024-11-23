@@ -5,166 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navidades 2024 París</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-white text-gray-800 font-sans">
     <!-- Botón de Menú -->
-    <div id="menu-button" onclick="toggleMenu()">☰</div>
+    <button id="menu-button" class="fixed top-2 left-2 text-3xl text-white bg-blue-700 p-2 rounded" onclick="toggleMenu()">☰</button>
 
     <!-- Menú Lateral -->
-    <aside id="sidebar">
-        <h2>Menú</h2>
-        <ul>
-            <li>
-                <a href="./day01">
-                    <div class="calendar-icon">
-                        <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="48" height="48" rx="8" fill="#f25c54"></rect>
-                            <rect y="12" width="48" height="36" fill="#ffffff"></rect>
-                            <text x="24" y="10" font-family="Arial" font-size="10" fill="#ffffff"
-                                text-anchor="middle">DIC</text>
-                            <text x="24" y="34" font-family="Arial" font-size="20" font-weight="bold" fill="#333333"
-                                text-anchor="middle">27</text>
-                        </svg>
-                    </div>
-                    Llegada a París
-                </a>
-            </li>
-            <li>
-                <a href="./day02">
-                    <div class="calendar-icon">
-                        <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="48" height="48" rx="8" fill="#f25c54"></rect>
-                            <rect y="12" width="48" height="36" fill="#ffffff"></rect>
-                            <text x="24" y="10" font-family="Arial" font-size="10" fill="#ffffff"
-                                text-anchor="middle">DIC</text>
-                            <text x="24" y="34" font-family="Arial" font-size="20" font-weight="bold" fill="#333333"
-                                text-anchor="middle">28</text>
-                        </svg>
-                    </div>
-                    Iconos de París: Monumentos, Historia y Belleza Imperial
-                </a>
-            </li>
-            <li>
-                <a href="./day03">
-                    <div class="calendar-icon">
-                        <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="48" height="48" rx="8" fill="#f25c54"></rect>
-                            <rect y="12" width="48" height="36" fill="#ffffff"></rect>
-                            <text x="24" y="10" font-family="Arial" font-size="10" fill="#ffffff"
-                                text-anchor="middle">DIC</text>
-                            <text x="24" y="34" font-family="Arial" font-size="20" font-weight="bold" fill="#333333"
-                                text-anchor="middle">29</text>
-                        </svg>
-                    </div>
-                    Arte y Glamour: El París Cultural y Elegante
-                </a>
-            </li>
-            <li>
-                <a href="./day04">
-                    <div class="calendar-icon">
-                        <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="48" height="48" rx="8" fill="#f25c54"></rect>
-                            <rect y="12" width="48" height="36" fill="#ffffff"></rect>
-                            <text x="24" y="10" font-family="Arial" font-size="10" fill="#ffffff"
-                                text-anchor="middle">DIC</text>
-                            <text x="24" y="34" font-family="Arial" font-size="20" font-weight="bold" fill="#333333"
-                                text-anchor="middle">30</text>
-                        </svg>
-                    </div>
-                    El Corazón Histórico: París Bohemio y Monumental
-                </a>
-            </li>
-            <li>
-                <a href="./day05">
-                    <div class="calendar-icon">
-                        <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="48" height="48" rx="8" fill="#f25c54"></rect>
-                            <rect y="12" width="48" height="36" fill="#ffffff"></rect>
-                            <text x="24" y="10" font-family="Arial" font-size="10" fill="#ffffff"
-                                text-anchor="middle">DIC</text>
-                            <text x="24" y="34" font-family="Arial" font-size="20" font-weight="bold" fill="#333333"
-                                text-anchor="middle">31</text>
-                        </svg>
-                    </div>
-                    Vuelta a Madrid
-                </a>
-            </li>
+    <aside id="sidebar" class="fixed top-0 left-0 w-64 h-full bg-blue-900 text-white transform -translate-x-full transition-transform duration-300 z-50">
+        <h2 class="text-xl font-bold text-center py-4">Menú</h2>
+        <ul class="space-y-4 px-4">
+            <li><a href="./day01" class="flex items-center text-lg hover:text-yellow-400">Día 1: Llegada a París</a></li>
+            <li><a href="./day02" class="flex items-center text-lg hover:text-yellow-400">Día 2: Iconos de París</a></li>
+            <li><a href="./day03" class="flex items-center text-lg hover:text-yellow-400">Día 3: Arte y Glamour</a></li>
+            <li><a href="./day04" class="flex items-center text-lg hover:text-yellow-400">Día 4: París Bohemio</a></li>
+            <li><a href="./day05" class="flex items-center text-lg hover:text-yellow-400">Día 5: Vuelta a Madrid</a></li>
         </ul>
     </aside>
 
     <!-- Contenido Principal -->
-    <div id="content">
-        <header>
-            <h1>Navidades 2024 París</h1>
-            <div class="tabs">
-                <a href="#intro" class="tab-link active" onclick="openTab(event, 'intro')">Introducción</a>
-                <span class="tab-separator">|</span>
-                <a href="#map" class="tab-link" onclick="openTab(event, 'map')">Mapa</a>
-                <span class="tab-separator">|</span>
-                <a href="#places" class="tab-link" onclick="openTab(event, 'places')">Sitios de Interés</a>
-                <span class="tab-separator">|</span>
-                <a href="#food" class="tab-link" onclick="openTab(event, 'food')">Restaurantes y Snacks</a>
-                <span class="tab-separator">|</span>
-                <a href="#tips" class="tab-link" onclick="openTab(event, 'tips')">Curiosidades</a>
-            </div>
-
+    <div id="content" class="transition-transform transform duration-300">
+        <header class="bg-blue-700 text-white py-6 text-center">
+            <h1 class="text-3xl font-bold">Navidades 2024 en París</h1>
         </header>
 
-        <section id="intro">
-            <h2>Bienvenidos a París</h2>
+        <section class="p-4">
+            <h2 class="text-xl font-bold mb-2">Bienvenidos a París</h2>
             <p>Descubre el mejor itinerario para tu familia, optimizado para disfrutar de la Ciudad de la Luz.</p>
         </section>
 
-        <section id="day01">
-            <h2>Día 1: Llegada a París</h2>
-            <p>Transporte en Uber/Bolt/taxi desde el aeropuerto de Orly al hotel Louvre Marsollier.</p>
-        </section>
-
-        <section id="day02">
-            <h2>Día 2: Torre Eiffel y Campos Elíseos</h2>
-            <ul>
-                <li>Desayuno en Paul.</li>
-                <li>Visita al Arco del Triunfo y Campos Elíseos.</li>
-                <li>Almuerzo en Chez Suzette.</li>
-                <li>Visita a Les Invalides y Museo Rodin.</li>
-                <li>Paseo en barco por el Sena.</li>
-            </ul>
-        </section>
-
-        <section id="day03">
-            <h2>Día 3: Museo del Louvre y Montmartre</h2>
-            <ul>
-                <li>Desayuno en Paul.</li>
-                <li>Visita al Museo del Louvre con guía.</li>
-                <li>Almuerzo en Le Café Marly.</li>
-                <li>Visita a la Ópera Garnier y Galerías Lafayette.</li>
-                <li>Cena en Bouillon Pigalle.</li>
-            </ul>
-        </section>
-
-        <section id="day04">
-            <h2>Día 4: Barrio Latino y Montparnasse</h2>
-            <ul>
-                <li>Desayuno en Les Petits Mitrons.</li>
-                <li>Visita a Notre-Dame y Sainte Chapelle.</li>
-                <li>Almuerzo en Le Marmiton de Lutèce.</li>
-                <li>Visita a los Jardines de Luxemburgo y Tour Montparnasse.</li>
-                <li>Cena en Pain Vin Fromages.</li>
-            </ul>
-        </section>
-
-        <section id="day05">
-            <h2>Día 5: Regreso a Madrid</h2>
-            <p>Transporte en Uber/Bolt/taxi al aeropuerto de Orly para el vuelo de regreso a las 19:25.</p>
-        </section>
-
-        <footer>
+        <footer class="bg-blue-900 text-yellow-400 text-center py-2 text-sm fixed bottom-0 w-full">
             <p>Disfruta de tu viaje a París. ¡Bon voyage!</p>
         </footer>
     </div>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('-translate-x-full');
+        }
+    </script>
 </body>
 
 </html>
