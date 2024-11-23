@@ -215,20 +215,6 @@ html {
     scroll-margin-top: 70px;
 }
 
-/* Styles for the home button */
-#home-button {
-    display: block;
-    font-size: 1.2em;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-#home-button:hover {
-    color: #FFD700;
-}
-
-
 /* Fix footer to prevent overlapping content */
 html, body {
     height: 100%;
@@ -247,4 +233,87 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    /* Reduce sidebar width and adjust content padding */
+    #sidebar {
+        width: 70%;
+    }
+    #content {
+        transform: translateX(0);
+        padding: 10px;
+    }
+    .menu-open #content {
+        transform: translateX(70%);
+    }
+
+    /* Adjust header */
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Make tabs stack vertically */
+    .tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .tab-link {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Reduce font sizes for smaller screens */
+    body {
+        font-size: 14px;
+    }
+    #sidebar a {
+        font-size: 1em;
+    }
+    h1, h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+
+    /* Ensure calendar icons are appropriately sized */
+    .calendar-icon {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    /* Adjust padding in sections for better readability */
+    section {
+        padding: 10px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 0.8em;
+        padding: 5px 10px;
+    }
+}
+
+
+/* Maintain horizontal tabs on mobile */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: thin; /* For modern browsers */
+    }
+    .tab-link {
+        flex: none;
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+    .tab-separator {
+        display: none; /* Remove separators to save space */
+    }
 }
