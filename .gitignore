@@ -1,7 +1,20 @@
-**/node_modules
-**/src
-**/package-lock.json
-**/package.json
-**/script.js
-**/styles.css
-**/tailwind.config.js
+# Ignorar todo
+*
+
+# Permitir solo archivos HTML, CSS y JS
+!*.html
+!*.css
+!*.js
+
+# Permitir subcarpetas pero asegurarse de que solo incluyan archivos HTML, CSS y JS
+!*/
+
+# Opcional: ignorar archivos específicos del sistema o herramientas de desarrollo
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+dist/
+build/
+*.log
