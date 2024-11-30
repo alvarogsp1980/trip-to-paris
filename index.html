@@ -98,6 +98,34 @@
     <!-- Contenido Principal -->
     <div id="content">
         <header>
+            <h1>Dia 2: Monumentos, Historia y Belleza Imperial</h1>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+                rel="stylesheet">
+
+            <div class="tabs">
+                <a href="#sumary" class="tab-link" onclick="openTab(event, 'sumary')">
+                    <i class="fas fa-clipboard"></i>
+                </a>
+                <span class="tab-separator">|</span>
+                <a href="#map" class="tab-link" onclick="openTab(event, 'map')">
+                    <i class="fas fa-map"></i>
+                </a>
+                <span class="tab-separator">|</span>
+                <a href="#places" class="tab-link" onclick="openTab(event, 'places')">
+                    <i class="fas fa-landmark"></i>
+                </a>
+                <span class="tab-separator">|</span>
+                <a href="#eat-drink" class="tab-link" onclick="openTab(event, 'eat-drink')">
+                    <i class="fas fa-utensils"></i>
+                </a>
+                <span class="tab-separator">|</span>
+                <a href="#tips-tricks" class="tab-link" onclick="openTab(event, 'tips-tricks')">
+                    <i class="fas fa-lightbulb"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- <header>
             <h1>Navidades 2024 París</h1>
             <div class="tabs">
                 <a href="#intro" class="tab-link active" onclick="openTab(event, 'intro')">Introducción</a>
@@ -111,38 +139,35 @@
                 <a href="#tips" class="tab-link" onclick="openTab(event, 'tips')">Trucos y Consejos</a>
             </div>
 
-        </header>
+        </header> -->
 
-        <section id="intro">
+        <section id="sumary">
             <h1>Detalles del Viaje a París</h1>
             <table style="width: 100%; border-collapse: collapse; text-align: left;">
                 <tr>
                     <td
-                        style="border: 1px solid #ddd; padding: 8px;background-color: #0D246A; color: white; font-weight: bold;">
+                        style="border: 1px solid #ddd; padding: 8px; background-color: #0D246A; color: white; font-weight: bold;">
                         <strong>Vuelo de Ida</strong>
                     </td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">27/12/24 MAD (16:30) → ORY (18:25).
-                    </td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">27/12/24 MAD (16:30) → ORY (18:25).</td>
                 </tr>
                 <tr>
                     <td
-                        style="border: 1px solid #ddd; padding: 8px;background-color: #0D246A; color: white; font-weight: bold;">
+                        style="border: 1px solid #ddd; padding: 8px; background-color: #0D246A; color: white; font-weight: bold;">
                         <strong>Vuelo de Vuelta</strong>
                     </td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">31/12/24 ORY (19:25) → MAD (21:25).
-                    </td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">31/12/24 ORY (19:25) → MAD (21:25).</td>
                 </tr>
                 <tr>
                     <td
-                        style="border: 1px solid #ddd; padding: 8px;background-color: #0D246A; color: white; font-weight: bold;">
+                        style="border: 1px solid #ddd; padding: 8px; background-color: #0D246A; color: white; font-weight: bold;">
                         <strong>Viajeros</strong>
                     </td>
-                    <td style="border: 1px solid #ddd; padding: 8px;">2 A + 2 N (12,15).
-                    </td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">2 A + 2 N (12,15).</td>
                 </tr>
                 <tr>
                     <td
-                        style="border: 1px solid #ddd; padding: 8px;background-color: #0D246A; color: white; font-weight: bold;">
+                        style="border: 1px solid #ddd; padding: 8px; background-color: #0D246A; color: white; font-weight: bold;">
                         <strong>Alojamiento</strong>
                     </td>
                     <td style="border: 1px solid #ddd; padding: 8px;">
@@ -153,115 +178,103 @@
             </table>
             <h1>Planificación del Viaje</h1>
             <p style="text-align: justify;">
-                El objetivo principal de este viaje es disfrutar de París en familia, explorando su historia,
-                belleza y cultura. Queremos visitar los principales sitios históricos y disfrutar de momentos
-                especiales juntos, especialmente el paseo nocturno por el Sena y la visita al Louvre.
+                Este viaje está diseñado para explorar París en familia, priorizando sitios emblemáticos como el Museo
+                del
+                Louvre, la Torre Eiffel y actividades como el crucero nocturno por el Sena. Nuestro itinerario incluye
+                visitas
+                a lugares históricos, mercadillos navideños y vistas espectaculares de la ciudad.
             </p>
             <p style="text-align: justify;">
-                No vamos a Disneyland porque ya hemos estado dos veces y preferimos centrarnos en otras experiencias
-                esta vez. Solo visitaremos el Louvre, ya que no somos grandes aficionados a los museos, pero haremos
-                lo posible por disfrutar al máximo de los lugares históricos, plazas, parques y demás atractivos de
-                la ciudad.
+                Hemos organizado las actividades día a día, incluyendo horarios para desayunos, comidas y cenas en
+                lugares
+                cercanos para optimizar el tiempo. También tenemos consejos prácticos sobre transporte y entradas.
             </p>
-            <p style="text-align: justify;">
-                Los detalles día por día estarán en sus respectivas secciones para facilitar la organización y el
-                seguimiento.
-            </p>
-            <h1>Logística</h1>
-            <ul style="text-align: justify;">
-                <li>Nos alojaremos en el <strong>Hotel Louvre Marsollier</strong>, bien ubicado cerca de varios puntos
-                    clave.</li>
-                <li>En París usaremos exclusivamente <strong>transporte público</strong>: metro, autobús y tranvía. Nada
-                    de alquilar coches, ya que el transporte público es eficiente y cómodo.</li>
-                <li>Para los traslados entre el aeropuerto y el hotel (ida y vuelta), utilizaremos la opción más barata
-                    entre <strong>Uber</strong>, <strong>Bolt</strong> o <strong>taxi</strong>, ya que
-                    <strong>Cabify</strong> no opera en París.
-                </li>
-                <li><a href="https://www.ratp.fr/en/plans" target="_blank">Planos de transporte público</a></li>
-            </ul>
-        </section>
-
-        <section id="checklist">
-            <h2>Checklist de Viaje</h2>
-            <ul>
-                <li>DNI/pasaportes y tarjetas de embarque.</li>
-                <li>Reserva del hotel (impresa o en el móvil).</li>
-                <li>Ropa de invierno: abrigo, bufandas, guantes, paraguas.</li>
-                <li>Dinero en efectivo y tarjetas bancarias.</li>
-                <li>Adaptadores y cargadores para los dispositivos.</li>
-                <li>Medicamentos o artículos de higiene personal.</li>
-            </ul>
         </section>
 
         <section id="map">
-            <h2>Itinerario</h2>
-            <p>Explora la ubicación de los sitios en París que hemos preparado para ti:</p>
-            <iframe src="https://www.google.com/maps/d/embed?mid=1Kw-JSGrL6CZuABGzoN5myVLZ06qOOIU&ehbc=2E312F"
-                width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </section>
-
-        <section id="places">
-            <h2>Día 2: Torre Eiffel y Campos Elíseos</h2>
+            <h1>Itinerario Completo</h1>
+            
+            <h2>Día 27 de diciembre</h2>
             <ul>
-                <li>Desayuno en Paul.</li>
-                <li>Visita al Arco del Triunfo y Campos Elíseos.</li>
-                <li>Almuerzo en Chez Suzette.</li>
-                <li>Visita a Les Invalides y Museo Rodin.</li>
-                <li>Paseo en barco por el Sena.</li>
+                <li><strong>20:30:</strong> Paseo por la <strong>Ópera Garnier</strong>, <strong>Place Vendôme</strong>,
+                    e <strong>Iglesia de la Madeleine</strong>.</li>
+                <li><strong>21:30:</strong> Cena en <a href="https://www.bouillon-chartier.com/" target="_blank">Le
+                        Bouillon Chartier</a>.</li>
+                <li><strong>23:00:</strong> Regreso al hotel.</li>
             </ul>
-        </section>
-
-        <section id="food">
-            <h2>Día 3: Museo del Louvre y Montmartre</h2>
+            <h2>Día 28 de diciembre</h2>
             <ul>
-                <li>Desayuno en Paul.</li>
-                <li>Visita al Museo del Louvre con guía.</li>
-                <li>Almuerzo en Le Café Marly.</li>
-                <li>Visita a la Ópera Garnier y Galerías Lafayette.</li>
-                <li>Cena en Bouillon Pigalle.</li>
+                <li><strong>08:00:</strong> Desayuno en <a href="https://www.maison-kayser.com/" target="_blank">Eric
+                        Kayser</a>.</li>
+                <li><strong>11:00 - 14:00:</strong> Free tour por <strong>Notre-Dame</strong>,
+                    <strong>Sainte-Chapelle</strong>, y el <strong>Pont Neuf</strong>.</li>
+                <li><strong>14:00:</strong> Comida en <a
+                        href="https://www.tripadvisor.com/Restaurant_Review-g187147-d7195973-Reviews-La_Cordonnerie-Paris_Ile_de_France.html"
+                        target="_blank">La Cordonnerie</a>.</li>
+                <li><strong>15:30 - 17:30:</strong> Visita guiada al <strong>Museo del Louvre</strong>.</li>
+                <li><strong>18:00 - 19:30:</strong> Crucero por el Sena (salida desde el Pont de l'Alma).</li>
+                <li><strong>20:00:</strong> Cena en <a href="https://www.bistroparisien.com/" target="_blank">Le Bistro
+                        Parisien</a>.</li>
+                <li><strong>21:30:</strong> Mercadillo navideño en los <strong>Jardines de las Tullerías</strong>.</li>
             </ul>
-        </section>
-
-        <section id="tips">
-            <h1>Trucos y Consejos</h1>
-            <ul style="text-align: justify;">
-                <li><strong>Transporte desde el aeropuerto:</strong> Para llegar al centro o al hotel desde los
-                    aeropuertos (Beauvais, Orly o Charles de Gaulle), utiliza tren, metro, autobús, taxi o reserva un
-                    transfer directo al hotel.</li>
-                <li>
-                    <strong>Transporte y Tarjetas:</strong> La forma más cómoda de moverse por París es el
-                    <strong>metro</strong>, que cubre casi toda la ciudad. Para el barrio de Montmartre, puedes usar el
-                    <strong>funicular</strong> o caminar.
+            <h2>Día 29 de diciembre</h2>
+            <ul>
+                <li><strong>08:00:</strong> Desayuno en <a href="https://www.pretamanger.com/" target="_blank">Pret A
+                        Manger</a>.</li>
+                <li><strong>10:00 - 12:30:</strong> Visita a la <strong>Torre Eiffel</strong> (incluye subida al tercer
+                    piso).</li>
+                <li><strong>13:00:</strong> Comida en <a href="https://www.carette-paris.fr/"
+                        target="_blank">Carette</a> (en Trocadero).</li>
+                <li><strong>14:30 - 16:30:</strong> Paseo por los <strong>Campos Elíseos</strong> y visita al
+                    <strong>Arco de Triunfo</strong>.</li>
+                <li><strong>17:30 - 19:00:</strong> Visita a <strong>Galerías Lafayette</strong> (incluye terraza
+                    panorámica).</li>
+                <li><strong>19:30:</strong> Cena en <a href="https://www.bouillon-chartier.com/"
+                        target="_blank">Bouillon Chartier</a>.</li>
+                <li><strong>20:30:</strong> Mercadillo navideño en <strong>Saint-Germain-des-Prés</strong>.</li>
+            </ul>
+            <h2>Día 30 de diciembre</h2>
+            <ul>
+                <li><strong>07:30:</strong> Desayuno en el hotel.</li>
+                <li><strong>08:30 - 20:00:</strong> Día completo en <strong>Disneyland París</strong>.
                     <ul>
-                        <li>
-                            <strong>Billetes de Transporte:</strong> Compra el
-                            <a href="https://www.ratp.fr/en/titres-et-tarifs/t-ticket" target="_blank">Ticket t+</a>,
-                            válido para el metro, RER (zona 1), autobuses, tranvías y el funicular de Montmartre.
-                            Permite
-                            conexiones ilimitadas dentro de la red durante 1 hora y 30 minutos. No incluye conexiones
-                            entre
-                            metro/RER y autobuses/tranvías.
-                            <a href="https://www.ratp.fr/en/titres-et-tarifs/t-ticket" target="_blank">Más
-                                información</a>.
-                        </li>
-                        <li>
-                            <strong>Tarjeta Paris Pass:</strong> Si planeas visitar muchas atracciones, considera la
-                            tarjeta
-                            <a href="https://parispass.com/es" target="_blank">Paris Pass</a>, que incluye la entrada a
-                            más de
-                            60 atracciones y puede ser una opción económica para turistas.
-                        </li>
+                        <li><strong>Desayuno:</strong> Llévalo o tómalo antes de salir.</li>
+                        <li><strong>13:00:</strong> Comida en <a
+                                href="https://www.disneylandparis.com/en-us/dining/disney-village/earl-of-sandwich/"
+                                target="_blank">Earl of Sandwich</a>.</li>
+                        <li><strong>20:00:</strong> Cena rápida en Disney Village antes de regresar.</li>
                     </ul>
                 </li>
-                <li><strong>Agua en restaurantes:</strong> Pide "une carafe d’eau" (jarra de agua del grifo) para evitar
-                    pagar entre 5 y 6 € por una botella de agua.</li>
-                <li><strong>Reservas anticipadas:</strong> Reserva entradas con antelación para evitar colas en lugares
-                    populares como la Torre Eiffel o el Museo del Louvre.</li>
-                <li><strong>Free tours:</strong> Únete a free tours en español para conocer la historia y curiosidades
-                    de París. Es una forma económica y enriquecedora de explorar la ciudad.</li>
-                <li><strong>Tarjetas sin comisiones:</strong> Usa tarjetas bancarias como Revolut o N26 para evitar
-                    comisiones en compras o retiradas de efectivo.</li>
+                <li><strong>22:00:</strong> Regreso al hotel.</li>
+            </ul>
+            <h2>Día 31 de diciembre</h2>
+            <ul>
+                <li><strong>08:00:</strong> Desayuno en el hotel.</li>
+                <li><strong>09:30 - 11:30:</strong> Paseo por el <strong>Barrio Latino</strong>, visitando el
+                    <strong>Panteón</strong> y los <strong>Jardines de Luxemburgo</strong>.</li>
+                <li><strong>12:00 - 14:00:</strong> Último mercadillo navideño o paseo tranquilo.</li>
+                <li><strong>14:00:</strong> Comida en <a
+                        href="https://www.tripadvisor.com/Restaurant_Review-g187147-d7195973-Reviews-La_Cordonnerie-Paris_Ile_de_France.html"
+                        target="_blank">La Cordonnerie</a>.</li>
+                <li><strong>16:00:</strong> Regreso al hotel y traslado al aeropuerto Orly.</li>
+            </ul>
+        </section>
+        <section id="places">
+
+        </section>
+        <section id="eat-drink">
+
+        </section>
+
+        <section id="tips-tricks">
+            <h1>Trucos y Consejos</h1>
+            <ul>
+                <li>Usa <a href="https://www.uber.com/" target="_blank">Uber</a> o <a href="https://bolt.eu/"
+                        target="_blank">Bolt</a> para traslados al aeropuerto.</li>
+                <li>Reserva entradas para la Torre Eiffel y el Louvre con anticipación.</li>
+                <li>Pide "une carafe d’eau" en restaurantes para agua gratuita.</li>
+                <li>Usa el transporte público con pases como el <a
+                        href="https://www.ratp.fr/en/titres-et-tarifs/t-ticket" target="_blank">Ticket t+</a>.</li>
             </ul>
         </section>
         <footer>
