@@ -33,14 +33,14 @@ body {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     z-index: 999;
-    transform: translateX(-100%);    
+    transform: translateX(-100%);
 }
 
 #sidebar h2 {
     font-size: 1.5em;
     color: #ffffff;
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -107,7 +107,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;     
+    padding: 0 20px;
     padding-left: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -118,7 +118,7 @@ section {
     padding: 20px;
     max-width: 900px;
     margin: 0 auto;
-    scroll-margin-top: 100px; 
+    scroll-margin-top: 100px;
 }
 
 footer {
@@ -161,6 +161,8 @@ html {
 .tabs {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    /* Permite que las pestañas se envuelvan si no caben */
     align-items: center;
     margin-top: 10px;
     padding-bottom: 5px;
@@ -216,20 +218,23 @@ html {
 }
 
 /* Fix footer to prevent overlapping content */
-html, body {
+html,
+body {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 #content {
-    flex: 1; /* Allow content to grow and push footer to the bottom */
+    flex: 1;
+    /* Allow content to grow and push footer to the bottom */
     display: flex;
     flex-direction: column;
 }
 
 footer {
-    position: relative; /* Remove fixed positioning */
+    position: relative;
+    /* Remove fixed positioning */
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -237,14 +242,17 @@ footer {
 
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
+
     /* Reduce sidebar width and adjust content padding */
     #sidebar {
         width: 70%;
     }
+
     #content {
         transform: translateX(0);
         padding: 10px;
     }
+
     .menu-open #content {
         transform: translateX(70%);
     }
@@ -259,22 +267,40 @@ footer {
     .tabs {
         flex-direction: column;
         align-items: stretch;
+        justify-content: center;
+        /* Centrado horizontal en pantallas pequeñas */
+        overflow-x: auto;
+        /* Habilita desplazamiento horizontal si no cabe */
+        scrollbar-width: none;
+        /* Oculta la barra de desplazamiento */
     }
+
+    .tabs::-webkit-scrollbar {
+        display: none;
+        /* Oculta la barra en navegadores webkit */
+    }
+
     .tab-link {
         padding: 10px;
         text-align: center;
+        font-size: 0.9em;
+        /* Reduce el tamaño de las fuentes en móvil */
     }
 
     /* Reduce font sizes for smaller screens */
     body {
         font-size: 14px;
     }
+
     #sidebar a {
         font-size: 1em;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 1.5em;
     }
+
     h3 {
         font-size: 1.2em;
     }
@@ -306,14 +332,18 @@ footer {
         justify-content: flex-start;
         overflow-x: auto;
         white-space: nowrap;
-        scrollbar-width: thin; /* For modern browsers */
+        scrollbar-width: thin;
+        /* For modern browsers */
     }
+
     .tab-link {
         flex: none;
         padding: 5px 10px;
         font-size: 0.9em;
     }
+
     .tab-separator {
-        display: none; /* Remove separators to save space */
+        display: none;
+        /* Remove separators to save space */
     }
 }
